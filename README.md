@@ -37,6 +37,16 @@ https://drive.google.com/open?id=110Bp1CrGRFuJMqEB4Ig2f97_GwkffQKr
 [  ] PUT - /api/posts/:id (Update a single post by its id)
 [  ] DELETE - /api/posts/:id (Delete a single post by its id)
 
+[  ] Client:
+[ x ] add title
+[ x ] add textbox
+[ x ] add add button
+[ x ] add showAll button
+[  ] add todo on add
+[  ] edit todo on edit
+[  ] delete todo on delete
+[  ] show selected todo on todo-click
+[  ] show all todos on click show all
 
 
 

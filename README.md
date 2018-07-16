@@ -24,6 +24,12 @@ express
 react
 node -->
 
+App preview:
+https://drive.google.com/open?id=1-otEg2melWM-D9rrdZrp1M3tVRXv3UVF
+
+Client-Server-Database diagram
+https://drive.google.com/open?id=110Bp1CrGRFuJMqEB4Ig2f97_GwkffQKr
+
 [  ] 5 routes:
 [  ] GET - /api/posts (Retrieve all posts)
 [  ] POST - /api/posts (Create a new post)

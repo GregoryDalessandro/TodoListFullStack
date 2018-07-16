@@ -1,6 +1,10 @@
 var express = require('express');
 var app = express();
 
+app.listen(3000, function() {
+  console.log('listening on port 3000!');
+});
+
 // GET - /api/posts (Retrieve all posts)
 app.get('/api/posts', function (req, res) {
 
@@ -24,8 +28,4 @@ app.put('api/posts/:id', function (req, res) {
 // DELETE - /api/posts/:id (Delete a single post by its id)
 app.delete('/api/posts/:id', function (req, res) {
 
-});
-
-app.listen(3000, function() {
-  console.log('listening on port 3000!');
 });

@@ -20,8 +20,13 @@
   "dependencies": {
     "express": "^4.16.3",
     "jquery": "^3.3.1",
+    "jsx": "^0.9.89",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "require": "^2.4.20"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react": "^6.24.1"
   }
 }

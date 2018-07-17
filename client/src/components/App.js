@@ -1,12 +1,15 @@
 class TodoListItem extends React.Component {
   constructor(props) {
     super(props);
+
     this.onClickEdit = this.onClickEdit.bind(this);
     this.onClickRemove = this.onClickRemove.bind(this);
   }
   onClickEdit() {};
 
-  onClickRemove() {};
+  onClickRemove(props) {
+    console.log(this.props);
+  };
 
   render() {
     return (
@@ -33,8 +36,8 @@ var App = () => (
   <div>
     <h2>Todo List MERN FullStack</h2>
     <form>
-      <input type="text" name="name" />
-      <input type="submit" value="add" />
+      <input className="input" type="text" name="name" />
+      <input className="add" type="submit" value="add" />
     </form>
     <div>
     <TodoList todos={['make a frontend', 'make a server', 'make a backend']}/>

@@ -1,34 +1,35 @@
-// class App extends React.Component {
-//   constructor(props) {
-//     super(props);
+class TodoListItem extends React.Component {
+  constructor(props) {
+    super(props);
+  }
 
-//   }
-//   render() {
-//     return (
-//       <div>
-//         <div>{this.props.todo}</div>
-//         <div>{this.props.edit}</div>
-//         <div>{this.props.del}</div>
-//       </div>
-//     )
-//   }
-// }
+  render() {
+    return (
+      <li>{this.props.todo}</li>
+    );
+  }
+
+}
+
 var TodoList = (props) => (
   <ul>
-    <li>{props.todos[0]}</li>
-    <li>{props.todos[1]}</li>
-    <li>{props.todos[2]}</li>
+    {props.todos.map(todo =>
+      <TodoListItem todo={todo} />
+    )}
   </ul>
 );
+
 
 var App = () => (
   <div>
     <h2>Todo List MERN FullStack</h2>
-    <div class="textbox">
-      <input id="msg" type="input"></input>
-      <button id="add">add</button>
-    </div>
+    <form>
+      <input type="text" name="name" />
+      <input type="submit" value="add" />
+    </form>
+    <div>
     <TodoList todos={['make a frontend', 'make a server', 'make a backend']}/>
+    </div>
     <button id="showAll">show all</button>
   </div>
 );

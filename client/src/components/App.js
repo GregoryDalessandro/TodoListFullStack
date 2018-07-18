@@ -3,10 +3,7 @@ var App = () => (
 
     <h2>Todo List MERN FullStack</h2>
 
-    <form>
-      <input type="text" />
-      <button id="add">add</button>
-    </form>
+    <Form />
 
     <div>
       <TodoList todos={['make a frontend','make a server', 'make a backend']}/>

@@ -14,7 +14,9 @@ class Form extends React.Component {
   }
 
   clickHandler() {
-    console.log('add button working')
+    let $input = $('.userInput').val();
+    console.log($input)
+    $('.todo-list').append(<TodoListEntry todo={$input} key={$input}/>);
   }
 }
 

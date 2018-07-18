@@ -1,5 +1,5 @@
 var TodoList = (props) => (
-  <ul>
+  <ul className="todo-list">
     {props.todos.map(todo =>
       <TodoListEntry todo={todo} key={todo}/>
     )}

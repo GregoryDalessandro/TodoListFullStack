@@ -5,10 +5,12 @@ class TodoListEntry extends React.Component {
     this.onClickEdit = this.onClickEdit.bind(this);
     this.onClickRemove = this.onClickRemove.bind(this);
   }
-  onClickEdit() {};
+  onClickEdit() {
 
-  onClickRemove(props) {
-    console.log(this.props);
+  };
+
+  onClickRemove() {
+
   };
 
   render() {

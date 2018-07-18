@@ -1,23 +1,20 @@
-class Form extends React.Component {
-  constructor(props) {
-    super(props)
-  }
+// class Form extends React.Component {
+//   constructor(props) {
+//     super(props)
+//     this.addTodo = this.addTodo.bind(this);
+//   }
+//   addTodo (e) {
 
+//   }
 
-  render() {
-    return (
-      <div>
-        <input className="userInput" type="text" />
-        <button className="add" onClick={this.clickHandler.bind(this)}>add</button>
-      </div>
-    );
-  }
+//   render() {
+//     return (
+//       <form onSubmit={this.addTodo}>
+//         <input type="text" placeholder="enter task"/>
+//         <button type="submit">add</button>
+//       </form>
+//     );
+//   }
+// }
 
-  clickHandler() {
-    let $input = $('.userInput').val();
-    console.log($input)
-    $('.todo-list').append(<TodoListEntry todo={$input} key={$input}/>);
-  }
-}
-
-window.Form = Form;
+// window.Form = Form;

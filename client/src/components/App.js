@@ -1,5 +1,3 @@
-
-
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -12,14 +10,13 @@ class App extends React.Component {
     return (
       <div>
         <h2>Todo List MERN FullStack</h2>
-        <Form />
-        <div>
-          <TodoList todos={this.state.todos}/>
-        </div>
+        <TodoList/>
         <button id="showAll">show all</button>
       </div>
     );
   }
 }
+
+window.App = App;
 
 ReactDOM.render(<App />, document.getElementById("app"))

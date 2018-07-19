@@ -5,13 +5,21 @@ class App extends React.Component {
     this.state = {
       todoItems: []
     };
+    this.addItem = this.addItem.bind(this);
   }
+  addItem(todoItem) {
+    console.log(this.state.todoItems);
+    this.state.todoItems.unshift( {
+      index: todoItems.length + 1,
+      value: todoItem.newItemValue
+    });
 
+  }
   render() {
     return (
       <div>
         <h2>Todo List MERN FullStack</h2>
-        <Form/>
+        <Form addItem={this.addItem}/>
         <TodoList items={this.state.todoItems} removeItem={this.removeItem}/>
         <button id="showAll">show all</button>
       </div>

@@ -1,9 +1,16 @@
-// var express = require('express');
-// var app = express();
+var express = require('express');
+var app = express();
 
-// app.listen(8080, function() {
-//   console.log('listening on port 8080!');
-// });
+app.use(express.static(__dirname + '/public'));
+
+app.listen(8080, function() {
+  console.log('listening on port 8080!');
+});
+
+
+
+
+// app.get('/', (req, res) => res.send('Hello World!'));
 
 // // GET - /api/posts (Retrieve all posts)
 // app.get('/api/posts', function (req, res) {
@@ -29,3 +36,5 @@
 // app.delete('/api/posts/:id', function (req, res) {
 
 // });
+
+// module.exports = app;

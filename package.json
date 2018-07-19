@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack ./client/src/components/App.jsx --output ./client/dist/bundle.js --mode development",
+    "start": "node server/index.js",
     "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -1,4 +1,4 @@
-class TodoListEntries extends React.Component {
+class TodoListEntry extends React.Component {
   constructor(props) {
     super(props);
 
@@ -36,4 +36,4 @@ class TodoListEntries extends React.Component {
 
 
 
-window.TodoListEntries = TodoListEntries;
+window.TodoListEntry = TodoListEntry;

@@ -7,6 +7,7 @@ class App extends React.Component {
     return (
       <div>
         <h2>Todo List MERN FullStack</h2>
+        <Form/>
         <TodoList/>
         <button id="showAll">show all</button>
       </div>

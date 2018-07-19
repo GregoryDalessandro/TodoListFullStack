@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Form} from './Form.js';
-import {TodoList} from './TodoList';
-import {TodoListItem} from './TodoListItem';
+import {Form} from './Form.jsx';
+import {TodoList} from './TodoList.jsx';
+import {TodoListItem} from './TodoListItem.jsx';
 
 
 class App extends React.Component {

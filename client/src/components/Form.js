@@ -6,11 +6,11 @@ class Form extends React.Component {
 
   onSubmit (event) {
     event.preventDefault();
-    // console.log(newItemValue);
     var newItemValue = this.refs.itemName.value;
 
     if (newItemValue) {
       this.props.addItem({newItemValue});
+      this.refs.form.reset();
     }
   }
 

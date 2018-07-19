@@ -10,7 +10,6 @@ class TodoListItem extends React.Component {
   };
 
   onClickRemove() {
-    // console.log(typeof this.props.index);
     this.props.removeItem(this.props.index);
   };
 

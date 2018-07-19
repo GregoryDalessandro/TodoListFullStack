@@ -1,8 +1,8 @@
 var express = require('express');
 var app = express();
 
-app.listen(3000, function() {
-  console.log('listening on port 3000!');
+app.listen(8080, function() {
+  console.log('listening on port 8080!');
 });
 
 // GET - /api/posts (Retrieve all posts)

@@ -23,7 +23,7 @@ Mongodb
 express
 react
 node -->
-
+<!--
 App preview:
 https://drive.google.com/open?id=1-otEg2melWM-D9rrdZrp1M3tVRXv3UVF
 
@@ -47,7 +47,7 @@ https://drive.google.com/open?id=110Bp1CrGRFuJMqEB4Ig2f97_GwkffQKr
 [  ] delete todo on delete
 [  ] show selected todo on todo-click
 [  ] show all todos on click show all
-
+ -->
 
 
 

@@ -19,7 +19,7 @@ class TodoListItem extends React.Component {
       <li>
         <div>
           {this.props.item.value}
-          <button type="button" className="remove" onClick={this.onClickRemove}>add</button>
+          <button type="button" className="remove" onClick={this.onClickRemove}>remove</button>
         </div>
       </li>
     );

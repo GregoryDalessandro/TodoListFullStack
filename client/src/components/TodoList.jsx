@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {TodoListItem} from './TodoListItem.jsx'
+import TodoListItem from './TodoListItem.jsx'
 
 class TodoList extends React.Component {
   render() {

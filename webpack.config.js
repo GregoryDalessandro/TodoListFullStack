@@ -20,6 +20,7 @@ module.exports = {
   },
   module: {
     rules: [
+    // {exclude : [/\.ejs$/]},
       { test: /\.css$/,
         use: [
           { loader: "style-loader" },

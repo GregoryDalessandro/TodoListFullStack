@@ -1,7 +1,6 @@
 class TodoListItem extends React.Component {
   constructor(props) {
     super(props);
-
     this.onClickEdit = this.onClickEdit.bind(this);
     this.onClickRemove = this.onClickRemove.bind(this);
   }
@@ -11,7 +10,8 @@ class TodoListItem extends React.Component {
   };
 
   onClickRemove() {
-
+    // console.log(typeof this.props.index);
+    this.props.removeItem(this.props.index);
   };
 
   render() {

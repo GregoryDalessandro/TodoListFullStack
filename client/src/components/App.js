@@ -6,13 +6,18 @@ class App extends React.Component {
       todoItems: []
     };
     this.addItem = this.addItem.bind(this);
+    this.removeItem = this.removeItem.bind(this);
   }
   addItem(todoItem) {
-    console.log(this.state.todoItems);
+    // console.log(this.state.todoItems);
     this.state.todoItems.unshift( {
       index: this.state.todoItems.length + 1,
       value: todoItem.newItemValue
     });
+    this.setState({todoItems: this.state.todoItems});
+  }
+  removeItem(itemIndex) {
+    this.state.todoItems.splice(itemIndex, 1);
     this.setState({todoItems: this.state.todoItems});
   }
   render() {

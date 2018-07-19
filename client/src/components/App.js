@@ -1,9 +1,6 @@
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      todos: ['make a frontend','make a server', 'make a backend']
-    }
   }
 
   render() {
@@ -16,7 +13,5 @@ class App extends React.Component {
     );
   }
 }
-
-window.App = App;
 
 ReactDOM.render(<App />, document.getElementById("app"))

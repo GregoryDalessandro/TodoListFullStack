@@ -21,13 +21,15 @@ class TodoList extends React.Component {
           todos: prevState.todos.concat(newTodo)
         };
       });
-    }
 
     this._inputElement.value = "";
 
+    }
+
+
     console.log(this.state.todos);
 
-    //stop the page from refresh on submit
+    //stop the page from refreshing on submit
     e.preventDefault();
   }
 
@@ -36,10 +38,13 @@ class TodoList extends React.Component {
       <div className="todoListMain">
         <div className="header">
           <form onSubmit={this.addTodo}>
-            <input type="text" ref={(a) => this._inputElement = a} placeholder="enter task"></input>
+            <input ref={(a) => this._inputElement = a}
+                    placeholder="enter task">
+            </input>
             <button type="submit">add</button>
           </form>
         </div>
+        <TodoListEntries entries={this.state.todos} />
       </div>
     );
   }
@@ -48,7 +53,3 @@ class TodoList extends React.Component {
 
 
 window.TodoList = TodoList;
-
-// {props.todos.map((todo) =>
-//       <TodoListEntry todo={todo} key={todo.toString()}/>
-//     )}

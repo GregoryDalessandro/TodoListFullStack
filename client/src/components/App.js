@@ -13,7 +13,7 @@ class App extends React.Component {
       index: this.state.todoItems.length + 1,
       value: todoItem.newItemValue
     });
-
+    this.setState({todoItems: this.state.todoItems});
   }
   render() {
     return (

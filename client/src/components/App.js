@@ -1,6 +1,10 @@
 class App extends React.Component {
   constructor(props) {
     super(props);
+
+    this.state = {
+      todoItems: []
+    };
   }
 
   render() {
@@ -8,7 +12,7 @@ class App extends React.Component {
       <div>
         <h2>Todo List MERN FullStack</h2>
         <Form/>
-        <TodoList/>
+        <TodoList items={this.state.todoItems} removeItem={this.removeItem}/>
         <button id="showAll">show all</button>
       </div>
     );

@@ -6,13 +6,18 @@ class Form extends React.Component {
 
   onSubmit (event) {
     event.preventDefault();
-    var newTodoValue = this.refs.todoName.value;
+    console.log(newTodoValue);
+    var newTodoValue = this.refs.itemName.value;
+
+    if (newItemValue) {
+      this.props.addItem({newItemValue});
+    }
   }
 
   render() {
     return (
       <form ref="form" onSubmit={this.onSubmit}>
-        <input ref="todoName" type="text" placeholder="add a todo"/>
+        <input ref="itemName" type="text" placeholder="add a todo"/>
         <button type="submit">add</button>
       </form>
     );

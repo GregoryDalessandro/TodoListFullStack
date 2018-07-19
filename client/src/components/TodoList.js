@@ -1,17 +1,12 @@
 class TodoList extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      todos: []
-    };
-  }
-
   render() {
+    var items = this.props.items.map((item, index) => {
+      return (
+        <TodoListItem key={index} item={item} removeItem={this.props.removeItem}/>
+      );
+    });
     return (
-      <div className="todoListMain">
-        <TodoListEntry entries={this.state.todos} />
-      </div>
+      <ul>{items}</ul>
     );
   }
 }

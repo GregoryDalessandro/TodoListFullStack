@@ -10,7 +10,7 @@ class App extends React.Component {
   addItem(todoItem) {
     console.log(this.state.todoItems);
     this.state.todoItems.unshift( {
-      index: todoItems.length + 1,
+      index: this.state.todoItems.length + 1,
       value: todoItem.newItemValue
     });
 
@@ -27,4 +27,7 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById("app"))
+ReactDOM.render(<App />, document.getElementById("app"));
+
+
+

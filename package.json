@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack ./client/src/components/App.jsx --output ./client/dist/bundle.js --mode development",
     "start": "node server/index.js",
     "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -21,6 +20,7 @@
   },
   "homepage": "https://github.com/GregoryDalessandro/TodoListFullStack#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "jquery": "^3.3.1",
     "jsx": "^0.9.89",

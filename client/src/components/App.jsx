@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Form from './Form.jsx';
 import TodoList from './TodoList.jsx';
 import TodoListItem from './TodoListItem.jsx';
+var $ = require('jquery');
 // import app from '../server/index.js'
 
 class App extends React.Component {
@@ -21,6 +22,10 @@ class App extends React.Component {
       value: todoItem.newItemValue
     });
     this.setState({todoItems: this.state.todoItems});
+    $.get( "ajax/test.html", function( data ) {
+      $( ".result" ).html( data );
+      alert( "Load was performed." );
+    });
   }
   removeItem(itemIndex) {
     this.state.todoItems.splice(itemIndex, 1);

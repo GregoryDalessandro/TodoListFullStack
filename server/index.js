@@ -1,19 +1,25 @@
 var express = require('express');
 var app = express();
+var bodyParser = require('body-parser');
+var port = process.env.PORT || 8080;
+var router = express.Router();
 
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 app.use(express.static(__dirname + '/client'));
+app.use('/api', router);
 
-app.listen(8080, function() {
-  console.log('listening on port 8080!');
+app.listen(port, function() {
+  console.log('Listening on port ' + port + '!');
 });
 
-
-
-
- app.get('/', (req, res) => res.send('Hello World!'));
+router.get('/', function(req, res) {
+    res.json({ message: 'This is actually the real api, yay!' });
+});
 
 // GET - /api/posts (Retrieve all posts)
 app.get('/api/posts', function (req, res) {
+
 console.log('this is a get req');
 });
 
